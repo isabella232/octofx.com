@@ -1,1 +1,255 @@
-Hello World
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OctoFX - Demo</title>
+
+<link href="css/Octopus.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/site.css" rel="stylesheet" type="text/css">
+<link href="css/octofront.css" rel="stylesheet" type="text/css">
+<link href="css/open-sans.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/octofx.css" rel="stylesheet" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="top-and-splash">
+    <div id="top">
+        <div id="header">
+          <div class="navbar navbar-fixed-top">
+    <div class="">
+        <div class="container">
+            <div>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a id="logo" class="navbar-brand" href="/">Octopus Deploy</a>
+                </div>
+
+                <div id="nav-main" class='navbar-collapse collapse'>
+                    <div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="@(isPageSelected("/why") ? "active" : "")">
+                                <a href="#">
+                                    Overview
+                                </a>
+                            </li>
+                            <li class="@(isPageSelected("/company") ? "active" : "")">
+                                <a href="#">
+                                    Solution
+                                </a>
+                            </li>
+                            <li class="@(isPageSelected("/support") || isPageSelected("/videos") ? "active" : "")">
+                                <a href="#">
+                                    Setup
+                                </a>
+                            </li>
+
+                            <li class="@(isPageSelected("/purchase") || isPageSelected("/resellers") ? "active" : "")">
+                                <a href="#">
+                                    Process
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    
+</div>
+<!--<div id="middle">
+     <div class="stripe stripe-blue heading-fonts title">
+            <div class="container">
+                @RenderSection("Title")
+            </div>
+        </div>-->
+    
+    
+   
+<div class="banner" id="_summary">
+        <div class="banner-img"><img src="img/OctoFX_banner_03.png" alt=""/></div>
+              <div class="content">
+              <div class="container">
+              <h1>OctoFX</h1>
+              <h3>OctoFX is a sample application, built to demonstrate how a multi-tier application can be deployed using Octopus Deploy.            
+              </h3>
+              <div class="col-md-4 btn btn-success demo-txt">Source control demo <br> <h4>GitHub</h4></div> 
+              <div class="col-md-4 btn btn-success demo-txt">Build server demo <br> <h4>TeamCity</h4></div> 
+              <div class="col-md-4 btn btn-success demo-txt">Deployment demo <br> <h4>Octopus Deploy</h4></div> 
+
+              </div>
+              
+              </div>
+              <div class="scroll-down"><a class="mouse-scroll" href="#"> 
+  <span class="mouse">
+    <span class="mouse-movement"> 
+    </span>
+  </span>
+  <span class="mouse-message fadeIn">Learn more</span> 
+</a></div>
+        </div>
+        
+    <div id="main">
+        <div class="stripe stripe-white extra-padding">
+        <div class="container text-center">
+        <h4>The overview</h4>
+        <h2>Committing the deal</h2>
+        <p>OctoFX Ltd is a fictitious London-based online foreign exchange company. Retail customers and businesses can register an account with OctoFX, and use the platform to trade currencies.</p>
+        <div class="threecol col-md-3"><img src="img/overview_UI_07.png" alt=""/><h4>Customer requests a quote</h4></div>
+        <div class="threecol col-md-3"><img src="img/overview_UI_08.png" alt=""/><h4>System returns a quote</h4></div>        
+        <div class="threecol col-md-3"><img src="img/overview_UI_09.png" alt=""/><h4>Order is processed</h4></div>
+        </div></div>
+        
+      <div class="stripe stripe-gray ">
+        <div class="container solution">
+        <div class="row">
+        <div class="col-md-4">
+        <div class="content"><h4>The solution</h4>
+        <h2>The main components</h2>
+        <p>Da et et laudi officide conet que si blam aut labor resto omnia vero volor re exeris ut est plant quo excest alit volentis dolore volumquam andis endae la conserio. Ullibus demporum rem estio. Aximporibus earitiis eium vid qui il idem etur?</p></div></div>
+        <div class="diagram col-md-8">
+        <div class="circle-3"><div class="circle-2"><div class="circle-1"><i class="fa fa-database fa-3x" aria-hidden="true"></i><h4>Database</h4> <p>SQL</p></div></div></div>
+        <div class="circle-4"><i class="fa fa-desktop fa-3x" aria-hidden="true"></i><h4>Trading website</h4>
+<p>Asp.Net app</p></div><div class="line-1"></div>
+        <div class="circle-5"><i class="fa fa-balance-scale fa-3x" aria-hidden="true"></i><h4>Deal settlement service</h4>
+<p>Windows service</p></div><div class="line-2"></div>
+        </div></div>
+        </div></div>
+        
+        <div class="stripe stripe-white extra-padding">
+        <div class="container text-center">
+        <h4>The setup</h4>
+        <h2>Octopus Deploy</h2>
+        <p>The OctoFX development team are forward-thinking and always looking to embrace good development practices. By using Octopus Deploy they can compete in the cut-throat world of online FX trading, by being able to iterate and deploy new changes quickly, with low risk.
+</p>
+</div>
+<div class="stripe environments">
+<div class="enviro-left col-md-2"><img src="img/environments_img_13.png" alt=""/></div>
+<div class=" col-md-8"><h3>Environments and target machines</h3>
+<div class="col-md-6"><h4>Development</h4>
+<p>Da et et laudi officide conet que si blam aut labor resto omnia vero volor re exeris ut est plant quo excest alit volentis doluptate quae eserum idunte quossiti iusapicaest, cusdaec temolup icientiistis autaercia de numento exeribus re dolore volumquam andis endae la conserio. Ullibus demporum rem estio. Aximporibus earitiis eium vid qui il idem etur?</p>
+</div><div class="col-md-6"><h4>Testing</h4>
+<p>Da et et laudi officide conet que si blam aut labor resto omnia vero volor re exeris ut est plant quo excest alit volentis doluptate quae eserum idunte quossiti iusapicaest, cusdaec temolup icientiistis autaercia de numento exeribus re dolore volumquam andis endae la conserio. Ullibus demporum rem estio. Aximporibus earitiis eium vid qui il idem etur?</p>
+</div>
+<div class="col-md-6"><h4>Acceptance</h4>
+<p>Da et et laudi officide conet que si blam aut labor resto omnia vero volor re exeris ut est plant quo excest alit volentis doluptate quae eserum idunte quossiti iusapicaest, cusdaec temolup icientiistis autaercia de numento exeribus re dolore volumquam andis endae la conserio. Ullibus demporum rem estio. Aximporibus earitiis eium vid qui il idem etur?</p>
+</div><div class="col-md-6"><h4>Production</h4>
+<p>Da et et laudi officide conet que si blam aut labor resto omnia vero volor re exeris ut est plant quo excest alit volentis doluptate quae eserum idunte quossiti iusapicaest, cusdaec temolup icientiistis autaercia de numento exeribus re dolore volumquam andis endae la conserio. Ullibus demporum rem estio. Aximporibus earitiis eium vid qui il idem etur?</p></div>
+</div><div class="enviro-right col-md-2"> <img src="img/environments_img_14.png" alt=""/></div></div>
+<div class="row">
+<div class="project col-md-8 center-block">
+<h3>Project configuration</h3>
+ <div  class="col-sm-12">
+  <div class="col-md-2"><ul class="nav nav-pills nav-stacked">
+    <li class="active"><a data-toggle="pill"href="#overview">Overview</a></li>
+    <li><a data-toggle="pill" href="#process">Process</a></li>
+    <li><a data-toggle="pill" href="#variables">Variables</a></li>
+        <li><a data-toggle="pill" href="#channels">Channels</a></li>
+    <li><a data-toggle="pill" href="#releases">Releases</a></li>
+    <li><a data-toggle="pill" href="#settings">Settings</a></li>
+
+  </ul>
+</div>
+<div class="col-md-10">
+  <div class="tab-content">
+    <div id="overview" class="tab-pane fade in active">
+      <p>Some content.</p>
+      <img class="video" src="img/project-overview.png" alt=""/> </div>
+    <div id="process" class="tab-pane fade">
+      <p>Some content in process.</p>
+      <img class="video" src="img/project-process.png" alt=""/> 
+    </div>
+    <div id="variables" class="tab-pane fade">
+      <p>Some content in variables.</p>
+      <img class="video" src="img/project-variables.png" alt=""/> 
+    </div>
+    <div id="channels" class="tab-pane fade">
+      <p>Some content in channels.</p>
+      <img class="video" src="img/project-channels.png" alt=""/> 
+    </div>
+    <div id="releases" class="tab-pane fade">
+      <p>Some content in releases.</p>
+      <img class="video" src="img/project-releases.png" alt=""/> 
+    </div>
+    <div id="settings" class="tab-pane fade">
+      <p>Some content in settings.</p>
+      <img class="video" src="img/project-settings.png" alt=""/> 
+    </div>
+  </div></div>
+</div>
+</div> 
+</div>
+</div>
+        <div class="stripe stripe-gray extra-padding" >
+        <div class="container text-center">
+        <h4>The process</h4>
+        <h2>Continuous delivery</h2>
+        <p>Da et et laudi officide conet que si blam aut labor resto omnia vero volor re exeris ut est plant quo excest alit volentis dolore volumquam andis endae la conserio. Ullibus demporum rem estio. Aximporibus earitiis eium vid qui il idem etur?</p>
+        <p>&nbsp;</p>
+        <h3>The delivery pipeline</h3>
+        <div class="pipeline text-left row">
+        <div class="col-md-4">
+        <img src="img/pipeline_1.png" alt=""/>
+        <h4>1. Commit code</h4>
+        <p>Developer commits code to a github repository.
+		<a href="#">View GitHub</a></p>
+        </div>
+        <div class="col-md-4">
+        <img src="img/pipeline_2.png" alt=""/>
+        <h4>2. Compile & test</h4>
+        <p>A build server compiles the code and runs unit tests.
+		<a href="#">View TeamCity</a></p> </div>
+        <div class="col-md-4">
+        <img src="img/pipeline_3.png" alt=""/>
+        <h4>3. Packaged & pushed</h4>
+        <p>The application is packaged and pushed to Octopus Deploy.
+		<a href="#">View Octopus Deploy</a></p></div>
+        </div>
+        <div class="pipeline text-left row">
+        <div class="col-md-4">
+        <img src="img/pipeline_4.png" alt=""/>
+        <h4>4. Auto deploy to test</h4>
+        <p>The application is automatically deployed to a test environment. A suite of automated web tests are run against the application.</p></div>
+        <div class="col-md-4">
+        <img src="img/pipeline_5.png" alt=""/>
+        <h4>5. Deploy to UAT</h4>
+        <p>The application is deployed to a UAT environment, for stakeholders to see new changes.</p></div>
+        <div class="col-md-4">
+        <img src="img/pipeline_6.png" alt=""/>
+        <h4>6. Promote to production</h4>
+        <p>When the various stakeholders are happy, the application is prompted to the production environment.</p></div>
+        </div>
+        </div></div>
+    </div>
+</div>
+
+<div id="bottom">
+    <div id="footer">
+      <div class="container text-center extra-padding">
+           <h1> Discover Octopus</h1>
+           <div class="col-md-4 btn btn-success demo-txt">Source control demo <br> <h4>GitHub</h4></div> 
+              <div class="col-md-4 btn btn-success demo-txt">Build server demo <br> <h4>TeamCity</h4></div> 
+              <div class="col-md-4 btn btn-success demo-txt">Deployment demo <br> <h4>Octopus Deploy</h4></div> 
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

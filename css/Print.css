@@ -1,0 +1,13 @@
+﻿/*Reset Style*/
+body {margin:0; padding:0; line-height: 1.4em; word-spacing:1px; letter-spacing:0.2px; font: 13px Segoe UI, Helvetica, Arial, "Lucida Grande", serif; color: #000;}
+
+/*Remove Element*/
+#top, #bottom, #disqus_thread, .sidebar
+{
+    display:none;
+}
+
+body div#middle div#body div.contentbox
+{
+    border: none;    
+}

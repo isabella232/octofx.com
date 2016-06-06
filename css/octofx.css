@@ -65,10 +65,10 @@ h3 {font-weight:lighter;}
 #footer h1 {font-weight:lighter; color:#fff; padding-bottom:20px;}
 .footer-social {background-color:#273b4a; padding:20px 0;}
 .footer-social h4 {color:#9ea7ae;padding-bottom:10px;}
-.form-left {display:inline-block;padding-right: 0px !important;float:none; }
+.form-left {display:inline-block;padding-right: 0px !important;float:none; padding-left:0 !important; margin:3px 0; }
 input.form-field {width:100%; font-family: Open Sans, Arial, sans-serif; color:#38546a; font-size: 11px; background-color:#0f2535; border-width:0; padding:10px; letter-spacing:0.5px; }
 input.form-field:focus {background-color:#fff; outline: none; border: 0px;}
-.subscribe-form {width:800px; margin: 0 auto;}
+.subscribe-form {max-width:800px; margin: 0 auto;}
 input.hidden {display:none;}
 .submit-btn {width:100%; font-family: Open Sans, Arial, sans-serif; color:#9ea7ae; font-size: 13px; background-color:#3d4f5c; border-width:0; padding:7px; border-radius:3px; letter-spacing:0.5px; font-weight:normal;}
 .submit-btn:hover {background-color:#fff; color:#273b4a;}

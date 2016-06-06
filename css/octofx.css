@@ -64,7 +64,8 @@ h3 {font-weight:lighter;}
 #footer {padding:50px 0;}
 #footer h1 {font-weight:lighter; color:#fff; padding-bottom:20px;}
 .footer-social {background-color:#273b4a; padding:20px 0;}
-.form-left {display:inline-block;padding-right: 0px !important; }
+.footer-social h4 {color:#9ea7ae;padding-bottom:10px;}
+.form-left {display:inline-block;padding-right: 0px !important;float:none; }
 input.form-field {width:100%; font-family: Open Sans, Arial, sans-serif; color:#38546a; font-size: 11px; background-color:#0f2535; border-width:0; padding:10px; letter-spacing:0.5px; }
 input.form-field:focus {background-color:#fff; outline: none; border: 0px;}
 .subscribe-form {width:800px; margin: 0 auto;}

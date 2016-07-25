@@ -15,10 +15,10 @@ h3 {font-weight:lighter;}
 /* BANNER*/
 .banner-wrapper {position:relative; display:table-cell; vertical-align:middle;background-color:#F5F7FA;}
 .banner {height:100vh; margin-top:-56px; text-align:center; position:relative; display:table; width:100%;vertical-align:middle; }
-.banner .content {position:relative; vertical-align: bottom; display:inline-block; padding:10px 0; max-width:1170px;}
+.banner .content {position:relative; vertical-align: bottom; display:block; padding:10px 0; max-width:1170px; margin:0 auto;}
 .banner h1 {font-size:54px; font-weight:lighter; margin-bottom:0px; margin-top:0px;}
 .banner h3 {font-size:20px; font-weight:lighter; margin-top:5px; margin-bottom:10px; max-width: 850px;margin-left: auto;margin-right: auto;}
-.banner-img {vertical-align:top; display:inline-block; position:relative; max-width:800px; padding-top:66px; overflow:hidden;}
+.banner-img {vertical-align:top; display:block; position:relative; max-width:800px; padding-top:66px; overflow:hidden; margin:0 auto;}
 .scroll-down {position: absolute; bottom: 0; left: 48%; /*padding-bottom:20px;*/}
 
 /* OVERVIEW SECTION*/
